@@ -70,19 +70,7 @@ describe("The giveScore function", () => {
 
 describe("Check that game over is working correctly", () => {
   it("should say GAME OVER when health drops below 0", () => {
-    jonas.health = 3;
-    daniel.attack(jonas)
-    // expect( enemy => {
-    //   daniel.attack(jonas);
-    // }).toBe("GAME OVER JONAS!! Congrats Daniel");
-    // const result = daniel.attack(jonas)
-    console.log(jonas)
-    // console.log(daniel.attack(jonas))
-    // console.log(result)
-    // expect(result).toBe("GAME OVER JONAS!! Congrats Daniel");
+    daniel.health = 3;
+    expect(daniel.attack(jonas)).toBe("GAME OVER JONAS!! Congrats Daniel");
   });
 });
-
-/* TODO :
-    check when the game ends
-*/
